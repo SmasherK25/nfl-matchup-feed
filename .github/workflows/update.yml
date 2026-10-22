@@ -1,0 +1,38 @@
+name: Update public NFL matchup data
+on:
+  schedule:
+    - cron: '23 11 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: public-nfl-feed
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/cache@v4
+        with:
+          path: work
+          key: nflverse-public-v14-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            nflverse-public-v14-${{ runner.os }}-
+      - name: Download public sources
+        shell: bash
+        run: node helper/download.mjs work/raw "2018:$(date -u +%Y)"
+      - name: Aggregate public play-by-play
+        run: node --max-old-space-size=6144 helper/aggregate.mjs work/raw work/prepared
+      - name: Prepare dated roles and profiles
+        run: node --max-old-space-size=6144 helper/prepare-research.mjs work/prepared
+      - name: Build compact packet
+        run: node --max-old-space-size=6144 helper/build-feed.mjs work/prepared/research.json.gz public-feed
+      - name: Publish immutable packet and manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node helper/publish.mjs public-feed
