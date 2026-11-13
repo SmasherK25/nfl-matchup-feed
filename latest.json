@@ -1,18 +1,28 @@
 {
   "schema": "NFL_MATCHUP_MANIFEST_V1",
-  "version": "0394d9ba46a6b15189ec009c",
-  "packetUrl": "https://github.com/SmasherK25/nfl-matchup-feed/releases/download/feeds-2026-11/packet-0394d9ba46a6b15189ec009c.json.gz",
-  "sha256": "f01d07eb05e09be2438e4332c9b483b900249b7efdf859f466a35b9fe5165723",
-  "bytes": 2288692,
-  "lastCheckedAt": "2026-11-12T19:00:18.027Z",
-  "dataThrough": 1794273300000,
+  "version": "23de932edd1eda4ad1e28e80",
+  "packetUrl": "https://github.com/SmasherK25/nfl-matchup-feed/releases/download/feeds-2026-11/packet-23de932edd1eda4ad1e28e80.json.gz",
+  "sha256": "5ca02657a378b2712e3c29febd5d893e831ce696a1a6f25ff98c42344e9286ec",
+  "bytes": 2294035,
+  "lastCheckedAt": "2026-11-13T18:36:31.067Z",
+  "dataThrough": 1794532500000,
   "seasons": [
     2025,
     2026
   ],
-  "factCount": 816,
-  "templateCount": 2263,
+  "factCount": 818,
+  "templateCount": 2264,
   "sources": [
+    {
+      "year": 2018,
+      "key": "teams",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2018.csv",
+      "sha256": "d2df3adf2fbadfb597bc334807f5020aefe2b2ae13d28155f7f01cb981f00555",
+      "bytes": 215509,
+      "retrievedAt": "2026-10-22T17:25:22.038Z",
+      "etag": "\"0x8DEF95A36E78490\"",
+      "lastModified": "Thu, 13 Aug 2026 16:44:59 GMT"
+    },
     {
       "year": 2018,
       "key": "players",
@@ -32,16 +42,6 @@
       "retrievedAt": "2026-10-22T17:25:22.162Z",
       "etag": "\"0x8DD87B1BCE9439D\"",
       "lastModified": "Wed, 30 Apr 2025 06:39:20 GMT"
-    },
-    {
-      "year": 2018,
-      "key": "teams",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2018.csv",
-      "sha256": "d2df3adf2fbadfb597bc334807f5020aefe2b2ae13d28155f7f01cb981f00555",
-      "bytes": 215509,
-      "retrievedAt": "2026-10-22T17:25:22.038Z",
-      "etag": "\"0x8DEF95A36E78490\"",
-      "lastModified": "Thu, 13 Aug 2026 16:44:59 GMT"
     },
     {
       "year": 2018,
@@ -67,10 +67,10 @@
       "year": "all",
       "key": "schedule",
       "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-      "sha256": "c73ad9584589bbb4d9f512f91591f0368598960e4854cf88e6690ead481bdc27",
-      "bytes": 2189964,
-      "retrievedAt": "2026-11-12T18:58:34.842Z",
-      "etag": "W/\"26e7de0c244f2493ad73d127327c3ba1ded610f01c6e8967890192cf36c0dde2\"",
+      "sha256": "736ce0db78d34915b3a7a755d3cd15d7623f615891b749319a119171320650d6",
+      "bytes": 2190036,
+      "retrievedAt": "2026-11-13T18:34:48.133Z",
+      "etag": "W/\"bce0206a36492c21365f9015315d6e6d5bedd5985de979927e46580f0cfe1da9\"",
       "lastModified": null
     },
     {
@@ -105,6 +105,16 @@
     },
     {
       "year": 2019,
+      "key": "roster",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2019.csv",
+      "sha256": "b00259cfddf2146512569423275dc17e142d31ddb13bfba6b0b826c9d3d810da",
+      "bytes": 1001234,
+      "retrievedAt": "2026-10-22T17:25:22.426Z",
+      "etag": "\"0x8DBB3F4B81E5A04\"",
+      "lastModified": "Wed, 13 Sep 2023 00:59:44 GMT"
+    },
+    {
+      "year": 2019,
       "key": "snaps",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2019.csv",
       "sha256": "0cd52be8fa57f18503b670cb8263246c4f548375b768cbcad1c7a7462c98970d",
@@ -114,14 +124,14 @@
       "lastModified": "Mon, 06 Oct 2025 06:51:03 GMT"
     },
     {
-      "year": 2019,
-      "key": "roster",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2019.csv",
-      "sha256": "b00259cfddf2146512569423275dc17e142d31ddb13bfba6b0b826c9d3d810da",
-      "bytes": 1001234,
-      "retrievedAt": "2026-10-22T17:25:22.426Z",
-      "etag": "\"0x8DBB3F4B81E5A04\"",
-      "lastModified": "Wed, 13 Sep 2023 00:59:44 GMT"
+      "year": 2020,
+      "key": "players",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2020.csv",
+      "sha256": "05b992676faccc8940efbf6242cb76358069372d31d7c2e02c1a4acdcd3cbe18",
+      "bytes": 7883270,
+      "retrievedAt": "2026-10-22T17:25:22.573Z",
+      "etag": "\"0x8DF034497786ABA\"",
+      "lastModified": "Wed, 26 Aug 2026 07:35:24 GMT"
     },
     {
       "year": 2020,
@@ -135,13 +145,13 @@
     },
     {
       "year": 2020,
-      "key": "players",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2020.csv",
-      "sha256": "05b992676faccc8940efbf6242cb76358069372d31d7c2e02c1a4acdcd3cbe18",
-      "bytes": 7883270,
-      "retrievedAt": "2026-10-22T17:25:22.573Z",
-      "etag": "\"0x8DF034497786ABA\"",
-      "lastModified": "Wed, 26 Aug 2026 07:35:24 GMT"
+      "key": "roster",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2020.csv",
+      "sha256": "dcf25143db7b54ac488d042b6c24142340effced1d6c8599b2084a9f412b3ed2",
+      "bytes": 988000,
+      "retrievedAt": "2026-10-22T17:25:22.725Z",
+      "etag": "\"0x8DBB3F5735191E4\"",
+      "lastModified": "Wed, 13 Sep 2023 01:04:58 GMT"
     },
     {
       "year": 2020,
@@ -162,16 +172,6 @@
       "retrievedAt": "2026-10-22T17:25:22.734Z",
       "etag": "\"0x8DF1A3A67F82216\"",
       "lastModified": "Thu, 24 Sep 2026 12:50:26 GMT"
-    },
-    {
-      "year": 2020,
-      "key": "roster",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2020.csv",
-      "sha256": "dcf25143db7b54ac488d042b6c24142340effced1d6c8599b2084a9f412b3ed2",
-      "bytes": 988000,
-      "retrievedAt": "2026-10-22T17:25:22.725Z",
-      "etag": "\"0x8DBB3F5735191E4\"",
-      "lastModified": "Wed, 13 Sep 2023 01:04:58 GMT"
     },
     {
       "year": 2021,
@@ -225,16 +225,6 @@
     },
     {
       "year": 2022,
-      "key": "pbp",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.csv.gz",
-      "sha256": "0c69a71eb39498956c7b1d5c1ca52ce7fe679934a95d1af249facb5ea9829ea4",
-      "bytes": 19093961,
-      "retrievedAt": "2026-10-22T17:25:23.095Z",
-      "etag": "\"0x8DE6A21089B1245\"",
-      "lastModified": "Thu, 12 Feb 2026 10:25:24 GMT"
-    },
-    {
-      "year": 2022,
       "key": "players",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2022.csv",
       "sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
@@ -242,6 +232,16 @@
       "retrievedAt": "2026-10-22T17:25:23.087Z",
       "etag": "\"0x8DEF95AAA9FC20B\"",
       "lastModified": "Thu, 13 Aug 2026 16:48:13 GMT"
+    },
+    {
+      "year": 2022,
+      "key": "pbp",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2022.csv.gz",
+      "sha256": "0c69a71eb39498956c7b1d5c1ca52ce7fe679934a95d1af249facb5ea9829ea4",
+      "bytes": 19093961,
+      "retrievedAt": "2026-10-22T17:25:23.095Z",
+      "etag": "\"0x8DE6A21089B1245\"",
+      "lastModified": "Thu, 12 Feb 2026 10:25:24 GMT"
     },
     {
       "year": 2022,
@@ -355,16 +355,6 @@
     },
     {
       "year": 2024,
-      "key": "snaps",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2024.csv",
-      "sha256": "a2aa58efe093f8aa0ad5aadf09f81d8ec690a1183bd2dde68d20e7f109a9c335",
-      "bytes": 2402841,
-      "retrievedAt": "2026-10-22T17:25:23.647Z",
-      "etag": "\"0x8DE04A4C22DA56A\"",
-      "lastModified": "Mon, 06 Oct 2025 06:51:21 GMT"
-    },
-    {
-      "year": 2024,
       "key": "roster",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2024.csv",
       "sha256": "97721aa9092edb15c1357f2dac359dba72f63c81cc0e69408c65c229c91f50c1",
@@ -372,6 +362,16 @@
       "retrievedAt": "2026-10-22T17:25:23.676Z",
       "etag": "\"0x8DD62C8187EEB0A\"",
       "lastModified": "Fri, 14 Mar 2025 07:16:10 GMT"
+    },
+    {
+      "year": 2024,
+      "key": "snaps",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2024.csv",
+      "sha256": "a2aa58efe093f8aa0ad5aadf09f81d8ec690a1183bd2dde68d20e7f109a9c335",
+      "bytes": 2402841,
+      "retrievedAt": "2026-10-22T17:25:23.647Z",
+      "etag": "\"0x8DE04A4C22DA56A\"",
+      "lastModified": "Mon, 06 Oct 2025 06:51:21 GMT"
     },
     {
       "year": 2025,
@@ -385,26 +385,6 @@
     },
     {
       "year": 2025,
-      "key": "players",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2025.csv",
-      "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
-      "bytes": 8656387,
-      "retrievedAt": "2026-10-22T17:25:23.698Z",
-      "etag": "\"0x8DEF95B1AFD7169\"",
-      "lastModified": "Thu, 13 Aug 2026 16:51:22 GMT"
-    },
-    {
-      "year": 2025,
-      "key": "snaps",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2025.csv",
-      "sha256": "3fc2deb0e9ad86d34d4578cb80bb21c95253e088ee22ca028adf46f7485eff1f",
-      "bytes": 2401290,
-      "retrievedAt": "2026-10-22T17:25:23.783Z",
-      "etag": "\"0x8DF1A3A6B9AD785\"",
-      "lastModified": "Thu, 24 Sep 2026 12:50:32 GMT"
-    },
-    {
-      "year": 2025,
       "key": "teams",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2025.csv",
       "sha256": "91058a59d894855377b2f39f40c4e7bdbeef96d12144289dc68215209a1c93cb",
@@ -412,6 +392,16 @@
       "retrievedAt": "2026-10-22T17:25:23.687Z",
       "etag": "\"0x8DEF95B1C06E364\"",
       "lastModified": "Thu, 13 Aug 2026 16:51:24 GMT"
+    },
+    {
+      "year": 2025,
+      "key": "players",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2025.csv",
+      "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+      "bytes": 8656387,
+      "retrievedAt": "2026-10-22T17:25:23.698Z",
+      "etag": "\"0x8DEF95B1AFD7169\"",
+      "lastModified": "Thu, 13 Aug 2026 16:51:22 GMT"
     },
     {
       "year": 2025,
@@ -424,54 +414,64 @@
       "lastModified": "Sat, 14 Mar 2026 07:33:08 GMT"
     },
     {
-      "year": 2026,
-      "key": "teams",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv",
-      "sha256": "b87aa50dd275feda741c267004f9d28e6975768637288d3740ef96772d888527",
-      "bytes": 110868,
-      "retrievedAt": "2026-11-12T18:58:34.699Z",
-      "etag": "\"0x8DF40E3809AB136\"",
-      "lastModified": "Thu, 12 Nov 2026 17:36:36 GMT"
+      "year": 2025,
+      "key": "snaps",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2025.csv",
+      "sha256": "3fc2deb0e9ad86d34d4578cb80bb21c95253e088ee22ca028adf46f7485eff1f",
+      "bytes": 2401290,
+      "retrievedAt": "2026-10-22T17:25:23.783Z",
+      "etag": "\"0x8DF1A3A6B9AD785\"",
+      "lastModified": "Thu, 24 Sep 2026 12:50:32 GMT"
     },
     {
       "year": 2026,
-      "key": "pbp",
-      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv.gz",
-      "sha256": "1aa9d0dadf7152ee17b8df94b0d8e5c944d43c4cf217518acd60311455cbe818",
-      "bytes": 9346348,
-      "retrievedAt": "2026-11-12T18:58:34.742Z",
-      "etag": "\"0x8DF40E3325A84B4\"",
-      "lastModified": "Thu, 12 Nov 2026 17:34:25 GMT"
+      "key": "teams",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_team/stats_team_week_2026.csv",
+      "sha256": "3ec00f4b9cd7dac765ac45d6f5f4866cdd7da9676de4235e6286339a125a2804",
+      "bytes": 111662,
+      "retrievedAt": "2026-11-13T18:34:47.999Z",
+      "etag": "\"0x8DF41A98C339FD9\"",
+      "lastModified": "Fri, 13 Nov 2026 17:14:16 GMT"
     },
     {
       "year": 2026,
       "key": "players",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-      "sha256": "164bbcb46f4bf93c06a17c0f2497a06c17bbaf543d1e352ee6b85410febf884a",
-      "bytes": 4210587,
-      "retrievedAt": "2026-11-12T18:58:34.776Z",
-      "etag": "\"0x8DF40E37E98B2DD\"",
-      "lastModified": "Thu, 12 Nov 2026 17:36:33 GMT"
+      "sha256": "a7f51400624ae41f38db1395122115ff653231789ed0a840a3a7fae9e3bc977a",
+      "bytes": 4241495,
+      "retrievedAt": "2026-11-13T18:34:48.003Z",
+      "etag": "\"0x8DF41A989E58E33\"",
+      "lastModified": "Fri, 13 Nov 2026 17:14:12 GMT"
+    },
+    {
+      "year": 2026,
+      "key": "pbp",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.csv.gz",
+      "sha256": "eb81745dd0991364db3f9885f8037f7a0ad295da60ef77ee07c41e5f11f43a2b",
+      "bytes": 9416763,
+      "retrievedAt": "2026-11-13T18:34:48.075Z",
+      "etag": "\"0x8DF41A9314130BD\"",
+      "lastModified": "Fri, 13 Nov 2026 17:11:44 GMT"
     },
     {
       "year": 2026,
       "key": "roster",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2026.csv",
-      "sha256": "a96d64cac47684bf0ad06b43f36ba3fe9ec1a36e4332b8a167a39fb5364a7e1c",
-      "bytes": 981967,
-      "retrievedAt": "2026-11-12T18:58:34.785Z",
-      "etag": "\"0x8DF40D5D35A8295\"",
-      "lastModified": "Thu, 12 Nov 2026 15:58:42 GMT"
+      "sha256": "4368a2bc1532c2f5cc424fbe1e7521b73cdde019a6e02d697cc05bf4818ecdc3",
+      "bytes": 983400,
+      "retrievedAt": "2026-11-13T18:34:48.138Z",
+      "etag": "\"0x8DF4199B10F05FE\"",
+      "lastModified": "Fri, 13 Nov 2026 15:20:46 GMT"
     },
     {
       "year": 2026,
       "key": "snaps",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv",
-      "sha256": "354729bdea65e782b8e559354dcdcc55d4ece586dfbcd00adf263523092b12b7",
-      "bytes": 1139048,
-      "retrievedAt": "2026-11-10T18:42:11.318Z",
-      "etag": "\"0x8DF3F2601290A4A\"",
-      "lastModified": "Tue, 10 Nov 2026 12:27:37 GMT"
+      "sha256": "ba54197d9e1e9a5473153f984f4880e736020c9e20565d1df246bf1e62714866",
+      "bytes": 1147455,
+      "retrievedAt": "2026-11-13T18:34:48.159Z",
+      "etag": "\"0x8DF417DDD5B4475\"",
+      "lastModified": "Fri, 13 Nov 2026 12:01:35 GMT"
     }
   ]
 }
